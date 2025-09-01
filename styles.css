@@ -136,12 +136,6 @@ body {
     opacity: 0.8;
 }
 
-/* Main Sections */
-.section {
-    padding: 30px 40px;
-    border-bottom: 1px solid #e9ecef;
-}
-
 .section:last-child {
     border-bottom: none;
 }
@@ -159,31 +153,23 @@ body {
 
 /* Summary Section */
 .summary {
-    font-size: 15px;
-    line-height: 1.7;
-    text-align: justify;
+    font-size: 13px;
+    text-align: left;
     color: #555;
 }
 
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-}
-
-.skill-category {
-    background: #f8f9fa;
-    border-left: 4px solid #014d43;
-    padding: 20px;
-    border-radius: 0 8px 8px 0;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
 }
 
 .skill-category h4 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #014d43;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -194,22 +180,22 @@ body {
 }
 
 .skill-list li {
-    margin-bottom: 8px;
-    font-size: 13px;
-    line-height: 1.5;
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 1.4;
     color: #555;
 }
 
 .skill-list li strong {
     color: #333;
     font-weight: 600;
+    font-size: 12px;
 }
 
 /* Work History */
 .job {
-    margin-bottom: 30px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .job:last-child {
@@ -281,9 +267,8 @@ body {
 
 /* Project History */
 .project {
-    margin-bottom: 30px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .project:last-child {
@@ -336,12 +321,14 @@ body {
 .project-features ul li {
     position: relative;
     padding-left: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: #555;
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 .project-features ul li:before {
-    content: "•";
+    content: "▸";
     position: absolute;
     left: 0;
     color: #014d43;
@@ -397,13 +384,6 @@ body {
     font-weight: 600;
 }
 
-/* Education Section */
-.education-item {
-    background: #f8f9fa;
-    padding: 20px;
-    border-left: 4px solid #014d43;
-}
-
 .degree {
     font-size: 16px;
     font-weight: 600;
@@ -442,146 +422,106 @@ body {
     body {
         padding: 10px;
     }
-    
+
     .header-section {
         padding: 15px 20px;
     }
-    
+
     .header-content {
         flex-direction: column;
         text-align: center;
         gap: 20px;
         min-height: auto;
     }
-    
+
     .profile-left {
         flex-direction: column;
         text-align: center;
         gap: 15px;
         align-items: center;
     }
-    
+
     .profile-photo {
         width: 80px;
         height: 80px;
     }
-    
+
     .profile-info {
         text-align: center;
     }
-    
+
     .name {
         font-size: 22px;
     }
-    
+
     .title {
         font-size: 14px;
     }
-    
+
     .contact-right {
         text-align: center;
         gap: 12px;
         align-items: center;
     }
-    
+
     .contact-row {
         flex-direction: column;
         gap: 8px;
     }
-    
+
     .contact-item {
         justify-content: center;
         gap: 6px;
     }
-    
+
     .contact-item span,
     .contact-item a {
         font-size: 12px;
     }
-    
+
     .contact-item i {
         font-size: 12px;
     }
 }
-    
-    .section {
-        padding: 25px 20px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .job-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .job-meta {
-        text-align: left;
-    }
-    
-    .bottom-sections {
-        grid-template-columns: 1fr;
-    }
-    
-    .bottom-sections .section {
-        border-right: none;
-        border-bottom: 1px solid #e9ecef;
-    }
-    
-    .bottom-sections .section:last-child {
-        border-bottom: none;
-    }
+
+.skills-grid {
+    gap: 12px;
 }
 
-/* Print Styles for PDF Export */
-@media print {
-    body {
-        background: white;
-        padding: 0;
-        font-size: 12px;
-    }
-    
-    .resume {
-        box-shadow: none;
-        max-width: none;
-        margin: 0;
-    }
-    
-    .header-section {
-        background: #014d43 !important;
-        -webkit-print-color-adjust: exact;
-        color-adjust: exact;
-    }
-    
-    .section {
-        break-inside: avoid;
-        padding: 20px 30px;
-    }
-    
-    .job, .project {
-        break-inside: avoid;
-        margin-bottom: 20px;
-    }
-    
-    .skill-category {
-        break-inside: avoid;
-    }
-    
-    .profile-photo:hover {
-        transform: none;
-    }
-    
-    .contact-item a {
-        color: white !important;
-        text-decoration: none !important;
-    }
-    
-    .project-title-link {
-        color: #014d43 !important;
-        text-decoration: none !important;
-    }
+.skill-category h4 {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.skill-list li {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.job-header {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.job-meta {
+    text-align: left;
+}
+
+.bottom-sections {
+    grid-template-columns: 1fr;
+}
+
+.bottom-sections .section {
+    border-right: none;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.bottom-sections .section:last-child {
+    border-bottom: none;
+}
+
+.section {
+    padding: 15px 15px 0px 15px;
 }
 
 @page {
