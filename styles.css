@@ -158,8 +158,8 @@ body {
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 10px;
     page-break-inside: avoid;
 }
 
@@ -467,10 +467,6 @@ body {
         justify-content: center;
         gap: 6px;
     }
-}
-
-.skills-grid {
-    gap: 25px;
 }
 
 .job-header {
