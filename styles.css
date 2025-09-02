@@ -452,14 +452,6 @@ body {
         text-align: center;
     }
 
-    .name {
-        font-size: 22px;
-    }
-
-    .title {
-        font-size: 14px;
-    }
-
     .contact-right {
         text-align: center;
         gap: 3px;
@@ -474,15 +466,6 @@ body {
     .contact-item {
         justify-content: center;
         gap: 6px;
-    }
-
-    .contact-item span,
-    .contact-item a {
-        font-size: 12px;
-    }
-
-    .contact-item i {
-        font-size: 12px;
     }
 }
 
