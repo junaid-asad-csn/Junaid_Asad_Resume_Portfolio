@@ -156,7 +156,7 @@ body {
 /* Summary Section */
 .summary {
     font-size: 13px;
-    text-align: justify;
+    text-align: left;
     color: #555;
     line-height: 1.5;
 }
@@ -319,7 +319,7 @@ body {
 .project-features p {
     margin-bottom: 8px;
     color: #555;
-    text-align: justify;
+    text-align: left;
 }
 
 .project-features ul {
