@@ -22,7 +22,6 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 0;
     overflow: hidden;
-    page-break-inside: auto;
     max-width: 210mm;
     min-height: 297mm;
     margin: 0 auto;
@@ -34,7 +33,6 @@ body {
     background: linear-gradient(135deg, #014d43 0%, #016b5d 100%);
     color: white;
     padding: 20px 30px;
-    page-break-after: avoid;
 }
 
 .header-content {
@@ -150,7 +148,6 @@ body {
     border-bottom: 2px solid #014d43;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    page-break-after: avoid;
 }
 
 /* Summary Section */
@@ -165,8 +162,7 @@ body {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 15px;
-    page-break-inside: avoid;
+    gap: 10px;
 }
 
 .skill-category h4 {
@@ -200,8 +196,6 @@ body {
 .job {
     margin-bottom: 12px;
     padding-bottom: 10px;
-    page-break-inside: avoid;
-    break-inside: avoid;
 }
 
 .job:last-child {
@@ -223,7 +217,6 @@ body {
     font-weight: 600;
     color: #014d43;
     margin-bottom: 4px;
-    page-break-after: avoid;
 }
 
 .company {
@@ -276,8 +269,6 @@ body {
 .project {
     margin-bottom: 12px;
     padding-bottom: 10px;
-    page-break-inside: avoid;
-    break-inside: avoid;
 }
 
 .project:last-child {
@@ -291,7 +282,6 @@ body {
     font-size: 15px;
     font-weight: 600;
     transition: color 0.3s ease;
-    page-break-after: avoid;
 }
 
 .project-title-link:hover {
@@ -355,7 +345,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    page-break-inside: avoid;
     margin-top: 10px;
 }
 
@@ -508,22 +497,6 @@ body {
     }
 }
 
-/* Additional A4 Print Optimizations */
-@media screen {
-    .job-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 10px;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-    
-    .job-meta {
-        text-align: right;
-    }
-}
-
 @media (max-width: 768px) {
     .job-header {
         flex-direction: column;
@@ -539,7 +512,4 @@ body {
 
 .section {
     padding: 15px 25px 0px 25px;
-    page-break-inside: avoid;
-    break-inside: avoid;
-    margin-bottom: 15px;
 }
